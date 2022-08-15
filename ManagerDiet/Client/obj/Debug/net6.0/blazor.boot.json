@@ -7,6 +7,8 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.FluentValidation.dll": "sha256-Yd+TgjggnGAP41alBqq4QQNW1P2sDk9W0RytHV+VFw8=",
+      "FluentValidation.dll": "sha256-NflrIQKcfYxeVjrVYw+AP1+xnZJp67Wq9L5Vsd5Cr\/8=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-hSXzdQFPBtfxBs3B2TFaykHyx2Mgqh21anN\/Gx+VKSo=",
       "Microsoft.AspNetCore.Components.dll": "sha256-BikLdQx36rYsSVwqNFVsuDwW4Soedlr\/SnAFSy5tjW8=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-92y2h3G1nlPZuHI7ZX3WI+lOUF3ipefJgi4gLswtgeQ=",
@@ -196,15 +198,15 @@
       "mscorlib.dll": "sha256-wmk56X5dbt29rrFZKEFpOFjotkZA+JSxA4fqkgmBsOU=",
       "netstandard.dll": "sha256-CvlfDmNgFRYT7l\/xZKu91FlbTFyLG\/5cH7YX63k9ghE=",
       "System.Private.CoreLib.dll": "sha256-aF4imeOpA59D6F5qCLabzkeY7MvRZzNYzavhB\/bdxvM=",
-      "ManagerDiet.Shared.dll": "sha256-0zJ6MM4quJ9n\/JhYClcGfr\/iCIEONpuDPnM4n08+9Ag=",
-      "ManagerDiet.Client.dll": "sha256-kPT4ja2gZ6Xd\/I1ks\/KODlMOyLBqzlKSjF33n98UDP0="
+      "ManagerDiet.Shared.dll": "sha256-Cie6BFRLH\/wtyecc0Tly7ArEGdpBCt+2++sipjfP9\/Q=",
+      "ManagerDiet.Client.dll": "sha256-2nAY5gKW3a4CNFEKhn+APwovA6TtjibLHvcaq4CxrSg="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "ManagerDiet.Shared.pdb": "sha256-tU7zOM3oUsvT2wueJiIQccAw1UojuCEMXtyKZzIedWI=",
-      "ManagerDiet.Client.pdb": "sha256-Y4SLCygKdOYf3bcqI0k8bQ7twBvPeKRtWdmw4kTNxhs="
+      "ManagerDiet.Shared.pdb": "sha256-w2VPYNxxU3ScLmY8nAmpKC55fpqYVAAB3C9uwHyGLrc=",
+      "ManagerDiet.Client.pdb": "sha256-p0buyAAhM0D3BUUCIti5fIJGTEQxqOOYrBlzNuK18vM="
     },
     "runtime": {
       "dotnet.6.0.7.d619bfsy1s.js": "sha256-pvJcJ6jtDSfxgXm03QYRTm4aAi9PSzMSJODReHtvASY=",

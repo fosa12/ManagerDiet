@@ -45,3 +45,5 @@ C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\obj\Debug\net6.0\refint\Ma
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\obj\Debug\net6.0\ManagerDiet.Server.pdb
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\obj\Debug\net6.0\ManagerDiet.Server.genruntimeconfig.cache
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\obj\Debug\net6.0\ref\ManagerDiet.Server.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\FluentValidation.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\Blazored.FluentValidation.dll

@@ -2,6 +2,29 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Blazored.FluentValidation/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "[10.2.1, 11.0.0)",
+          "Microsoft.AspNetCore.Components": "3.1.14",
+          "Microsoft.AspNetCore.Components.Web": "3.1.14"
+        },
+        "compile": {
+          "lib/netstandard2.1/Blazored.FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Blazored.FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation/10.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/6.0.7": {
         "type": "package",
         "dependencies": {
@@ -404,6 +427,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Blazored.FluentValidation": "2.0.3",
           "ManagerDiet.Shared": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "6.0.7"
         },
@@ -417,6 +441,9 @@
       "ManagerDiet.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FluentValidation": "10.4.0"
+        },
         "compile": {
           "bin/placeholder/ManagerDiet.Shared.dll": {}
         },
@@ -427,6 +454,40 @@
     }
   },
   "libraries": {
+    "Blazored.FluentValidation/2.0.3": {
+      "sha512": "YL+E/JGoyVODn0azRJtmfK48iZXpD9Jy6fQOyofAl6F++ELMqupKygN/aG0QZd92j9eCV5syUmz0QYDwmS+3qA==",
+      "type": "package",
+      "path": "blazored.fluentvalidation/2.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazored.fluentvalidation.2.0.3.nupkg.sha512",
+        "blazored.fluentvalidation.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/Blazored.FluentValidation.dll"
+      ]
+    },
+    "FluentValidation/10.4.0": {
+      "sha512": "rVI1b5L3pq3layrRKIo3N7AT3PWey8ocPZhf6zeHYf6LBBvnP1KzW3bm7KmeazOWW8m1KXMD+shfviIcKSgQ0g==",
+      "type": "package",
+      "path": "fluentvalidation/10.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.10.4.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
     "Microsoft.AspNetCore.Authorization/6.0.7": {
       "sha512": "tFVhR/obKzKWKT359cF+jEm2Bs2ytWwAkDwj0CsPwXIKkTZENSmgGP3pAkKW8vf+4RSFZNUYNt8s9OGTVfgBqA==",
       "type": "package",

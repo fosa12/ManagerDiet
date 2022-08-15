@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "k1aLXN+hnSAdw/spsJXIz2fVmVcGOcIC4EG9YAxrScbhpFyOzQjhjX5TU2JWFU45CIgk/cQUu2eocezY3+FmGg==",
+  "dgSpecHash": "ZTtPcbUof/B6CO3kv/H8iixLWCBxkn1y1MY6zZjrc7g1xUxGtdIJYwGyGit+burIAvkjNrHkFIqPtntmz5Keeg==",
   "success": true,
   "projectFilePath": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Shared\\ManagerDiet.Shared.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\liczn\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512"
+  ],
   "logs": []
 }
