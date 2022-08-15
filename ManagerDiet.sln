@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagerDiet.Server", "ManagerDiet\Server\ManagerDiet.Server.csproj", "{6CBBCC9E-45E0-4AFD-B005-70EB102D9D26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagerDiet.Server", "ManagerDiet\Server\ManagerDiet.Server.csproj", "{6CBBCC9E-45E0-4AFD-B005-70EB102D9D26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagerDiet.Client", "ManagerDiet\Client\ManagerDiet.Client.csproj", "{52D9BC17-84D1-4A28-9DCB-416ADCE46D3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagerDiet.Client", "ManagerDiet\Client\ManagerDiet.Client.csproj", "{52D9BC17-84D1-4A28-9DCB-416ADCE46D3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagerDiet.Shared", "ManagerDiet\Shared\ManagerDiet.Shared.csproj", "{0C375CA1-A3A7-4613-B3F9-96FBAE17BCB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagerDiet.Shared", "ManagerDiet\Shared\ManagerDiet.Shared.csproj", "{0C375CA1-A3A7-4613-B3F9-96FBAE17BCB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

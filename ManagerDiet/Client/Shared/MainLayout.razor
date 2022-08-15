@@ -1,17 +1,24 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
+<TopNav />
+
+<NavMenu />
+
+        <ErrorBoundary>
+            <ChildContent>
+                <div class="content-wrapper">
+                    @Body
+                </div>
+            </ChildContent>
+            <ErrorContent>
+                <p>Sorry there is nothing here to see!</p>
+            </ErrorContent>
+        </ErrorBoundary>
+
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2022 <a href="/">Menager diet</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> Beta 1.0
     </div>
-
-    <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+  </footer>

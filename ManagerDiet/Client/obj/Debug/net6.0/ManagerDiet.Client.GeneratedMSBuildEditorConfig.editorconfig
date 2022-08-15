@@ -22,25 +22,53 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Pages/AboutMe.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRNZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+[C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Pages/AddNewDiet.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkTmV3RGlldC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Pages/AvailableDiets.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXZhaWxhYmxlRGlldHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Pages/Calendar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsZW5kYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Pages/DietDescryption.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlldERlc2NyeXB0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Pages/MyDiet.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlEaWV0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Shared/ErrorLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEVycm9yTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Shared/TopNav.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRvcE5hdi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Shared/AdminLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFkbWluTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-i1tpjymcnf
 
 [C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

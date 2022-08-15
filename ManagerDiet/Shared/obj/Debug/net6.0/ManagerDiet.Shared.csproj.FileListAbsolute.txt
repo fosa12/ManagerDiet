@@ -1,0 +1,12 @@
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Shared\bin\Debug\net6.0\ManagerDiet.Shared.deps.json
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Shared\bin\Debug\net6.0\ManagerDiet.Shared.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Shared\bin\Debug\net6.0\ManagerDiet.Shared.pdb
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Shared\obj\Debug\net6.0\ManagerDiet.Shared.csproj.AssemblyReference.cache
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Shared\obj\Debug\net6.0\ManagerDiet.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Shared\obj\Debug\net6.0\ManagerDiet.Shared.AssemblyInfoInputs.cache
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Shared\obj\Debug\net6.0\ManagerDiet.Shared.AssemblyInfo.cs
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Shared\obj\Debug\net6.0\ManagerDiet.Shared.csproj.CoreCompileInputs.cache
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Shared\obj\Debug\net6.0\ManagerDiet.Shared.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Shared\obj\Debug\net6.0\refint\ManagerDiet.Shared.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Shared\obj\Debug\net6.0\ManagerDiet.Shared.pdb
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Shared\obj\Debug\net6.0\ref\ManagerDiet.Shared.dll

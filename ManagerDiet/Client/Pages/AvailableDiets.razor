@@ -1,0 +1,139 @@
+﻿@page "/availablediets"
+
+<!-- Main content -->
+@if (DietInformationList == null && !DietInformationList.Any())
+{
+    <p>Loading...</p>
+}
+else
+{
+    <section class="content">
+
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Dostępne diety</h3>
+
+                @*            <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+            <i class="fas fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+            <i class="fas fa-times"></i>
+            </button>
+            </div>*@
+            </div>
+            <div class="card-body p-0">
+                <table class="table table-striped projects">
+                    <thead>
+                        <tr>
+                            <th style="auto" class="text-center">
+                                Nazwa diety
+                            </th>
+                            <th style="auto" class="text-center">
+                                Indeks glikemiczny
+                            </th>
+                            <th style="auto" class="text-center">
+                                Zawartość protein
+                            </th>
+                            <th style="auto" class="text-center">
+                                Zawartość węglowodanów
+                            </th>
+                            <th style="auto" class="text-center">
+                                Zawartość tłuszczu
+                            </th>
+                            <th>
+
+                            </th>
+                        </tr>
+                    </thead>
+                    @foreach (var item in DietInformationList)
+                    {
+                        <tbody>
+                            <tr>
+                                <td class="text-center color=red">
+                                    @item.DietName
+                                    <br />
+                                    <small>
+                                        @item.DietShortDescryption
+                                    </small>
+                                </td>
+                                <td class="text-center">
+                                    @item.GlycemicIndex
+                                </td>
+                                <td class="text-center">
+                                    @item.QuantityProtein
+                                </td>
+                                <td class="text-center">
+                                    @item.QuantityCarbo
+                                </td>
+                                <td class="text-center">
+                                    @item.QuantityFat
+                                </td>
+                                <td class="project-actions text-right">
+                                    <a class="btn btn-primary btn-sm" href="/dietdescryption">
+                                        <i class="fas fa-folder">
+                                        </i>
+                                        Zobacz więcej informacji
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    }
+                </table>
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+
+    </section>
+}
+<!-- /.content -->
+@code {
+    public List<DietInformation> DietInformationList { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        DietInformationList = new List<DietInformation>();
+
+        var dietinfo1 = new DietInformation
+            {
+                Id = 1,
+                DietName = "Dieta niskoglikemiczna",
+                DietShortDescryption = "Polecana dla diabetyków",
+                GlycemicIndex = "Niski",
+                QuantityProtein = "Średnia",
+                QuantityCarbo = "Niska",
+                QuantityFat = "Średnia"
+            };
+        var dietinfo2 = new DietInformation
+            {
+                Id = 1,
+                DietName = "Dieta wysokobiałkowa",
+                DietShortDescryption = "Polecana dla sportowców",
+                GlycemicIndex = "Średni",
+                QuantityProtein = "Wysoka",
+                QuantityCarbo = "Średnia",
+                QuantityFat = "Średnia"
+            };
+
+
+        DietInformationList.Add(dietinfo1);
+        DietInformationList.Add(dietinfo2);
+
+    }
+
+
+    public class DietInformation
+    {
+        public int Id { get; set; }
+        public string DietName { get; set; }
+        public string DietShortDescryption { get; set; }
+        public string GlycemicIndex { get; set; }
+        public string QuantityProtein { get; set; }
+        public string QuantityCarbo { get; set; }
+        public string QuantityFat { get; set; }
+    }
+
+
+    }
