@@ -8,9 +8,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="6.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\ManagerDiet.Infrastructure\ManagerDiet.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\ManagerDiet.Persistance\ManagerDiet.Persistance.csproj" />
     <ProjectReference Include="..\Client\ManagerDiet.Client.csproj" />
     <ProjectReference Include="..\Shared\ManagerDiet.Shared.csproj" />
   </ItemGroup>

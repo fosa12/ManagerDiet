@@ -1,0 +1,17 @@
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\bin\Debug\net6.0\ManagerDiet.Persistance.deps.json
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\bin\Debug\net6.0\ManagerDiet.Persistance.runtimeconfig.json
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\bin\Debug\net6.0\ManagerDiet.Persistance.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\bin\Debug\net6.0\ManagerDiet.Persistance.pdb
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\bin\Debug\net6.0\ManagerDiet.Domain.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\bin\Debug\net6.0\ManagerDiet.Domain.pdb
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\obj\Debug\net6.0\ManagerDiet.Persistance.csproj.AssemblyReference.cache
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\obj\Debug\net6.0\ManagerDiet.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\obj\Debug\net6.0\ManagerDiet.Persistance.AssemblyInfoInputs.cache
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\obj\Debug\net6.0\ManagerDiet.Persistance.AssemblyInfo.cs
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\obj\Debug\net6.0\ManagerDiet.Persistance.csproj.CoreCompileInputs.cache
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\obj\Debug\net6.0\ManagerDiet.Persistance.csproj.CopyComplete
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\obj\Debug\net6.0\ManagerDiet.Persistance.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\obj\Debug\net6.0\refint\ManagerDiet.Persistance.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\obj\Debug\net6.0\ManagerDiet.Persistance.pdb
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\obj\Debug\net6.0\ManagerDiet.Persistance.genruntimeconfig.cache
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\obj\Debug\net6.0\ref\ManagerDiet.Persistance.dll

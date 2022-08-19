@@ -1,0 +1,85 @@
+﻿@using ManagerDiet.Shared.Diets.Commands
+
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Wprowadź dane nowej diety</h3>
+    </div>
+    <div class="card-body">
+        <label for="dietName">Nazwa diety</label>
+        <InputText id="dietName" @bind-Value="NewDiet.DietName" placeholder="np. Dieta wysokobiałkowa" class="form-control" />
+        <ValidationMessage For="() => NewDiet.DietName" />
+
+        <label for="dietShortDescyption">Krótki opis diety</label>
+        <InputText id="dietShortDescyption" @bind-Value="NewDiet.DietShortDescryption" placeholder="np. Dieta rekomendowana dla sportowców" class="form-control" />
+        <ValidationMessage For="() => NewDiet.DietShortDescryption" />
+
+        <label for="dietDescryption">Opis diety</label>
+        <InputTextArea id="dietDescryption" @bind-Value="NewDiet.DietDescryption" rows="" class="form-control" />
+        <ValidationMessage For="() => NewDiet.DietDescryption" />
+
+        <label for="glycemicIndex">Indeks glikemiczny</label>
+        <InputSelect id="glycemicIndex" @bind-Value="NewDiet.GlycemicIndex" rows="" class="form-control">
+
+            <option value="">----Wybierz odpowiedni średni index----</option>
+            <option value="@NewDiet.GlycemicIndex">Niski</option>
+            <option value="@NewDiet.GlycemicIndex">Średni</option>
+            <option value="@NewDiet.GlycemicIndex">Wysoki</option>
+        </InputSelect>
+        <ValidationMessage For="() => NewDiet.GlycemicIndex" />
+
+        <label for="protein">Zawartość białka</label>
+        <InputSelect id="protein" @bind-Value="NewDiet.QuantityProtein" rows="" class="form-control">
+            <option value="">----Wybierz odpowiednią średnią zawartość białka----</option>
+            <option value="@NewDiet.QuantityProtein">Niska</option>
+            <option value="@NewDiet.QuantityProtein">Średnia</option>
+            <option value="@NewDiet.QuantityProtein">Wysoka</option>
+        </InputSelect>
+        <ValidationMessage For="() => NewDiet.QuantityProtein" />
+
+        <label for="carbo">Zawartość węglowodanych</label>
+        <InputSelect id="carbo" @bind-Value="NewDiet.QuantityCarbo" rows="" class="form-control">
+            <option value="">----Wybierz odpowiednią średnią zawartość białka----</option>
+            <option value="@NewDiet.QuantityCarbo">Niska</option>
+            <option value="@NewDiet.QuantityCarbo">Średnia</option>
+            <option value="@NewDiet.QuantityCarbo">Wysoka</option>
+
+        </InputSelect>
+        <ValidationMessage For="() => NewDiet.QuantityCarbo" />
+
+        <label for="glycemicIndex">Zawartość tłuszczu</label>
+        <InputSelect id="glycemicIndex" @bind-Value="NewDiet.QuantityFat" rows="" class="form-control">
+            <option value="">----Wybierz odpowiednią średnią zawartość tłuszczu----</option>
+            <option value="@NewDiet.QuantityFat">Niska</option>
+            <option value="@NewDiet.QuantityFat">Średnia</option>
+            <option value="@NewDiet.QuantityFat">Wysoka</option>
+
+        </InputSelect>
+        <ValidationMessage For="() => NewDiet.QuantityFat" />
+    </div>
+    <!-- /.card-body -->
+    <!-- /.card -->
+</div>
+
+@code {
+    [Parameter]
+    public AddNewDietVM NewDiet { get; set; }
+
+    //private string dietName;
+
+    //[Parameter]
+    //public string DietName
+    //{
+    //    get => dietName;
+    //    set
+    //    {
+    //        if (dietName == value) return;
+    //        dietName = value;
+    //        DietNameChanged.InvokeAsync(value);
+    //    }
+    //}
+
+    //[Parameter]
+    //public EventCallback<string> DietNameChanged { get; set; }
+
+}

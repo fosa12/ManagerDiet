@@ -1,0 +1,15 @@
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\bin\Debug\net6.0\ManagerDiet.Infrastructure.deps.json
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\bin\Debug\net6.0\ManagerDiet.Infrastructure.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\bin\Debug\net6.0\ManagerDiet.Infrastructure.pdb
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\bin\Debug\net6.0\ManagerDiet.Domain.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\bin\Debug\net6.0\ManagerDiet.Domain.pdb
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\obj\Debug\net6.0\ManagerDiet.Infrastructure.csproj.AssemblyReference.cache
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\obj\Debug\net6.0\ManagerDiet.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\obj\Debug\net6.0\ManagerDiet.Infrastructure.AssemblyInfoInputs.cache
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\obj\Debug\net6.0\ManagerDiet.Infrastructure.AssemblyInfo.cs
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\obj\Debug\net6.0\ManagerDiet.Infrastructure.csproj.CoreCompileInputs.cache
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\obj\Debug\net6.0\ManagerDiet.Infrastructure.csproj.CopyComplete
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\obj\Debug\net6.0\ManagerDiet.Infrastructure.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\obj\Debug\net6.0\refint\ManagerDiet.Infrastructure.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\obj\Debug\net6.0\ManagerDiet.Infrastructure.pdb
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\obj\Debug\net6.0\ref\ManagerDiet.Infrastructure.dll

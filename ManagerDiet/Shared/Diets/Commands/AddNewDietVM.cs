@@ -19,9 +19,9 @@ namespace ManagerDiet.Shared.Diets.Commands
 
     }
 
-    public class AddPostValidator : AbstractValidator<AddNewDietVM>
+    public class AddDietValidator : AbstractValidator<AddNewDietVM>
     {
-        public AddPostValidator()
+        public AddDietValidator()
         {
             RuleFor(x => x.DietName).NotEmpty().WithMessage("Pole nie może być puste");
             RuleFor(x => x.DietName).MaximumLength(50).WithMessage("Maksymalna długość nazwy diety to 50 znaków");
@@ -41,8 +41,8 @@ namespace ManagerDiet.Shared.Diets.Commands
             RuleFor(x => x.QuantityCarbo).NotEmpty().WithMessage("Wybierz odpowiednią wartość");
 
             RuleFor(x => x.QuantityFat).NotEmpty().WithMessage("Wybierz odpowiednią wartość");
-
         }
+
     }
 }
 
