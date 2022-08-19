@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "KK+3dOkrB80TeXbFlCuAZaAHN4jBSgLHoftKQ+OF8O4WSQJIAPDOplXTkm71KO6k5bNq6O9qmE3uTSx1a1Tnpw==",
+  "dgSpecHash": "1b3vARks5goO9uFZ+GWQpH9OmmhtFvbJxH4GwmmX7mMOuOguK3Q7x8rKb3l1te6kKVxQXPl30NmAkfVwYjBxFg==",
   "success": true,
   "projectFilePath": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet.Application\\ManagerDiet.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\liczn\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\liczn\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\liczn\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.8\\microsoft.entityframeworkcore.6.0.8.nupkg.sha512",
     "C:\\Users\\liczn\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.8\\microsoft.entityframeworkcore.abstractions.6.0.8.nupkg.sha512",
     "C:\\Users\\liczn\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.8\\microsoft.entityframeworkcore.analyzers.6.0.8.nupkg.sha512",
