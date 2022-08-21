@@ -1,4 +1,5 @@
-﻿using ManagerDiet.Application.Diets.Queries.GetDietsDetail;
+﻿using AutoMapper;
+using ManagerDiet.Application.Diets.Queries.GetDietsDetail;
 using ManagerDiet.Application.Interfaces;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -13,8 +14,10 @@ namespace ManagerDiet.Application.Diets.Queries.GetDietDetail
     public class GetDietDetailQueryHandler : IRequestHandler<GetDietDetailQuery, DietDetailVm>
     {
         private readonly IDietDbContext _context;
-        public GetDietDetailQueryHandler(IDietDbContext dietDbContext)
+        private IMapper _mapper;
+        public GetDietDetailQueryHandler(IDietDbContext dietDbContext, IMapper mapper)
         {
+            _mapper = mapper;
             _context = dietDbContext;
         }
         public async Task<DietDetailVm> Handle(GetDietDetailQuery request, CancellationToken cancellationToken)
@@ -22,16 +25,7 @@ namespace ManagerDiet.Application.Diets.Queries.GetDietDetail
             var diet = await _context.Diets.Where(p => p.Id == request.DietId).FirstOrDefaultAsync(cancellationToken);
 
 
-            var dietVm = new DietDetailVm()
-            {
-                DietName = diet.DietName,
-                DietShortDescryption = diet.DietShortDescryption,
-                DietDescryption = diet.DietDescryption,
-                GlycemicIndex = diet.GlycemicIndex,
-                QuantityProtein = diet.QuantityProtein,
-                QuantityCarbo = diet.QuantityCarbo,
-                QuantityFat = diet.QuantityFat
-            };
+            var dietVm = _mapper.Map<DietDetailVm>(diet);
 
             return dietVm;
         }

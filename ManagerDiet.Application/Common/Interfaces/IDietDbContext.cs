@@ -16,5 +16,9 @@ namespace ManagerDiet.Application.Interfaces
         DbSet<EatedMeal> EatedMeals { get; set; }
         DbSet<Meal> Meals { get; set; }
         DbSet<UserInformation> UserInformations { get; set; }
+
+        Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken());
+
+
     }
 }

@@ -89,3 +89,10 @@ C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\ManagerDi
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\ManagerDiet.Infrastructure.pdb
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\ManagerDiet.Persistance.pdb
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\ManagerDiet.Domain.pdb
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\AutoMapper.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\MediatR.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\ManagerDiet.Application.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\ManagerDiet.Application.pdb

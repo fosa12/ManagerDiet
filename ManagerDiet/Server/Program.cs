@@ -1,3 +1,4 @@
+using ManagerDiet.Application;
 using ManagerDiet.Infrastructure;
 using ManagerDiet.Persistance;
 using Microsoft.AspNetCore.ResponseCompression;
@@ -10,6 +11,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddPresistance(builder.Configuration);
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddApplication();
 
 var app = builder.Build();
 
