@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "aTXRrmdbBCe+8NZkxEdRrwbuNKPierZDy8CBFBCrQYEpZI7RrKZzXfwZUPaQruPvy4OAn3fH7K5FmKcwmSmLDg==",
+  "dgSpecHash": "RtPLpki9xqH8fB5xFnq1XWg4bw0i9RvunWawIMcKqfPOYXj5pWzX4XlpJYzq/YIdxbV7EAyVr9/0h6UF64hGlQ==",
   "success": true,
   "projectFilePath": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet.Infrastructure\\ManagerDiet.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\liczn\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\liczn\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\liczn\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
+    "C:\\Users\\liczn\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.4.0\\fluentvalidation.dependencyinjectionextensions.10.4.0.nupkg.sha512",
     "C:\\Users\\liczn\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\liczn\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\liczn\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",

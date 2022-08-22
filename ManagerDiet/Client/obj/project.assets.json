@@ -1653,6 +1653,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Blazored.FluentValidation >= 2.0.3",
+      "FluentValidation >= 10.4.0",
       "ManagerDiet.Shared >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 6.0.7",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.7"
@@ -1704,6 +1705,10 @@
           "Blazored.FluentValidation": {
             "target": "Package",
             "version": "[2.0.3, )"
+          },
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[10.4.0, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",

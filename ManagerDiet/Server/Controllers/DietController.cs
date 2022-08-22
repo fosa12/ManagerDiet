@@ -1,4 +1,5 @@
-﻿using ManagerDiet.Application.Diets.Queries.GetDietsDetail;
+﻿using ManagerDiet.Application.Diets.Commands.CreateDiet;
+using ManagerDiet.Application.Diets.Queries.GetDietsDetail;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,6 +15,11 @@ namespace ManagerDiet.Server.Controllers
 
             return vm;
         }
-
+        [HttpPost()]
+        public async Task<IActionResult> CreateDiet(CreateDietCommand command)
+        {
+            var result = await Mediator.Send(command);
+            return Ok(result);
+        }
     }
 }

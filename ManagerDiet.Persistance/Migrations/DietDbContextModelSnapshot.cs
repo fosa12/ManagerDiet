@@ -82,14 +82,12 @@ namespace ManagerDiet.Persistance.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("InactivatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("Modified")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ModifiedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Sex")
@@ -135,14 +133,12 @@ namespace ManagerDiet.Persistance.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("InactivatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("Modified")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ModifiedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("StatusId")
@@ -196,14 +192,12 @@ namespace ManagerDiet.Persistance.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("InactivatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("Modified")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ModifiedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("QuantityCarbo")
@@ -251,7 +245,6 @@ namespace ManagerDiet.Persistance.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("InactivatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("MealId")
@@ -261,7 +254,6 @@ namespace ManagerDiet.Persistance.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ModifiedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("StatusId")
@@ -302,14 +294,12 @@ namespace ManagerDiet.Persistance.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("InactivatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("Modified")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ModifiedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -373,14 +363,12 @@ namespace ManagerDiet.Persistance.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("InactivatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("Modified")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ModifiedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("StatusId")

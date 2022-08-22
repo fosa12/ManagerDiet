@@ -96,3 +96,9 @@ C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\MediatR.C
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\ManagerDiet.Application.dll
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\ManagerDiet.Application.pdb
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\obj\Debug\net6.0\ManagerDiet.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
