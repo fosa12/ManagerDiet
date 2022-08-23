@@ -13,3 +13,5 @@ C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Application\obj\Debug\net6.0\ref\
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Application\bin\Debug\net6.0\ManagerDiet.Domain.dll
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Application\bin\Debug\net6.0\ManagerDiet.Domain.pdb
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Application\obj\Debug\net6.0\ManagerDiet.Application.csproj.CopyComplete
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Application\bin\Debug\net6.0\ManagerDiet.Shared.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Application\bin\Debug\net6.0\ManagerDiet.Shared.pdb

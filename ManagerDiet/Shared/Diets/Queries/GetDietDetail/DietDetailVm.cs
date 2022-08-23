@@ -1,15 +1,12 @@
-﻿using AutoMapper;
-using ManagerDiet.Application.Common.Mappings;
-using ManagerDiet.Domain.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManagerDiet.Application.Diets.Queries.GetDietsDetail
+namespace ManagerDiet.Shared.Diets.Queries.GetDietDetail
 {
-    public class DietDetailVm : IMapFrom<Diet>
+    public class DietDetailVm
     {
         public string DietName { get; set; }
         public string DietShortDescryption { get; set; }
@@ -18,10 +15,5 @@ namespace ManagerDiet.Application.Diets.Queries.GetDietsDetail
         public string QuantityProtein { get; set; }
         public string QuantityCarbo { get; set; }
         public string QuantityFat { get; set; }
-
-        public void Mapping(Profile profle)
-        {
-            profle.CreateMap<Diet, DietDetailVm>();
-        }
     }
 }

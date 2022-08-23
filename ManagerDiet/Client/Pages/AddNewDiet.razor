@@ -1,4 +1,7 @@
 ﻿@page "/availablediets/add"
+@inject HttpClient http;
+
+
 
 @using ManagerDiet.Client.Components.Diets.EditComponents
 @using ManagerDiet.Shared.Diets.Commands
@@ -46,11 +49,12 @@
     public AddNewDietVM NewDiet { get; set; } = new();
 
 
-    private void OnSubmitMethod(EditContext editContext)
+    private async void OnSubmitMethod(EditContext editContext)
     {
         if (editContext.Validate())
         {
             Console.WriteLine("Diet has been validated");
+            var response = await http.PostAsJsonAsync("api/diet", NewDiet);
         }
         else
         {

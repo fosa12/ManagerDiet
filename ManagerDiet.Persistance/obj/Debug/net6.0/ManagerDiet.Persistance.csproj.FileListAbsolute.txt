@@ -17,3 +17,5 @@ C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\obj\Debug\net6.0\Mana
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\obj\Debug\net6.0\ref\ManagerDiet.Persistance.dll
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\bin\Debug\net6.0\ManagerDiet.Application.dll
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\bin\Debug\net6.0\ManagerDiet.Application.pdb
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\bin\Debug\net6.0\ManagerDiet.Shared.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Persistance\bin\Debug\net6.0\ManagerDiet.Shared.pdb

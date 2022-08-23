@@ -30,6 +30,9 @@
             "projectReferences": {
               "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet.Domain\\ManagerDiet.Domain.csproj": {
                 "projectPath": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet.Domain\\ManagerDiet.Domain.csproj"
+              },
+              "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Shared\\ManagerDiet.Shared.csproj": {
+                "projectPath": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Shared\\ManagerDiet.Shared.csproj"
               }
             }
           }
@@ -467,6 +470,10 @@
               "target": "Package",
               "version": "[6.0.8, )"
             },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -517,7 +524,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet.Domain\\ManagerDiet.Domain.csproj": {
+                "projectPath": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet.Domain\\ManagerDiet.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

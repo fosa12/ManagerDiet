@@ -30,6 +30,7 @@ namespace ManagerDiet.Persistance
         public DbSet<EatedMeal> EatedMeals { get; set; }
         public DbSet<Meal> Meals { get; set; }
         public DbSet<UserInformation> UserInformations { get; set; }
+        public DbSet<Ingredient> Ingredients { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -414,11 +414,22 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "ManagerDiet.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ManagerDiet.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ManagerDiet.Domain.dll": {}
+        }
+      },
       "ManagerDiet.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "FluentValidation": "10.4.0"
+          "FluentValidation": "10.4.0",
+          "ManagerDiet.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ManagerDiet.Shared.dll": {}
@@ -835,11 +846,22 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "ManagerDiet.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ManagerDiet.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ManagerDiet.Domain.dll": {}
+        }
+      },
       "ManagerDiet.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "FluentValidation": "10.4.0"
+          "FluentValidation": "10.4.0",
+          "ManagerDiet.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ManagerDiet.Shared.dll": {}
@@ -1643,6 +1665,11 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "ManagerDiet.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../ManagerDiet.Domain/ManagerDiet.Domain.csproj",
+      "msbuildProject": "../../ManagerDiet.Domain/ManagerDiet.Domain.csproj"
     },
     "ManagerDiet.Shared/1.0.0": {
       "type": "project",

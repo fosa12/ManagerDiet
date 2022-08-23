@@ -13,6 +13,7 @@
           "FluentValidation": "10.4.0",
           "FluentValidation.DependencyInjectionExtensions": "10.4.0",
           "ManagerDiet.Domain": "1.0.0",
+          "ManagerDiet.Shared": "1.0.0",
           "MediatR": "10.0.1",
           "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
           "Microsoft.EntityFrameworkCore": "6.0.8"
@@ -229,6 +230,15 @@
         "runtime": {
           "ManagerDiet.Domain.dll": {}
         }
+      },
+      "ManagerDiet.Shared/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "10.4.0",
+          "ManagerDiet.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ManagerDiet.Shared.dll": {}
+        }
       }
     }
   },
@@ -393,6 +403,11 @@
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
     },
     "ManagerDiet.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ManagerDiet.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

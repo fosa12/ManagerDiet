@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using ManagerDiet.Shared.Diets.Queries.GetDietDetail;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;

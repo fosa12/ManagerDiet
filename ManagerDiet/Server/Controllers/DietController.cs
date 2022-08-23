@@ -1,5 +1,6 @@
 ﻿using ManagerDiet.Application.Diets.Commands.CreateDiet;
 using ManagerDiet.Application.Diets.Queries.GetDietsDetail;
+using ManagerDiet.Shared.Diets.Queries.GetDietDetail;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

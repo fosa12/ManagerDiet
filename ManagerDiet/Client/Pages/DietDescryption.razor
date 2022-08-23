@@ -1,6 +1,14 @@
-﻿@page "/dietdescryption"
+﻿@page "/dietdescryption/{id:int}"
+@using ManagerDiet.Shared.Diets.Queries.GetDietDetail
+@inject HttpClient http;
 
 
+@if (DietDetail == null)
+{
+    <p>Loading...</p>
+}
+else
+{
 <!-- Main content -->
 <section class="content">
     <div class="container-fluid">
@@ -12,66 +20,27 @@
                     <div class="card-body box-profile">
 
 
-                        <h3 class="profile-username text-center">Dieta niskoglikemiczna</h3>
+                        <h3 class="text-center">@DietDetail.DietName</h3>
+                        <h6 class="text-center">@DietDetail.DietShortDescryption</h6>
 
 
 
                         <ul class="list-group list-group-unbordered mb-3">
                             <li class="list-group-item">
-                                <b>Indeks glikemiczny:</b> <p class="float-right">Niski</p>
+                                <b>Indeks glikemiczny:</b> <p class="float-right">@DietDetail.GlycemicIndex</p>
                             </li>
                             <li class="list-group-item">
-                                <b>Zawartość białka</b> <a class="float-right">Średnie</a>
+                                <b>Zawartość białka</b> <p class="float-right">@DietDetail.QuantityProtein</p>
                             </li>
                             <li class="list-group-item">
-                                <b>Zawartość węglowodanych</b> <a class="float-right">Niska</a>
+                                <b>Zawartość węglowodanych</b> <p class="float-right">@DietDetail.QuantityCarbo</p>
                             </li>
                             <li class="list-group-item">
-                                <b>Zawartość tłuszczów</b> <a class="float-right">Średnia</a>
+                                <b>Zawartość tłuszczów</b> <p class="float-right">@DietDetail.QuantityFat</p>
                             </li>
                         </ul>
 
                         <a href="#" class="btn btn-success btn-block"><b>Przypisz diętę do konta</b></a>
-                    </div>
-                    <!-- /.card-body -->
-                </div>
-                <!-- /.card -->
-                <!-- About Me Box -->
-                <div class="card card-primary">
-                    <div class="card-header">
-                        <h3 class="card-title">About Me</h3>
-                    </div>
-                    <!-- /.card-header -->
-                    <div class="card-body">
-                        <strong><i class="fas fa-book mr-1"></i> Education</strong>
-
-                        <p class="text-muted">
-                            B.S. in Computer Science from the University of Tennessee at Knoxville
-                        </p>
-
-                        <hr>
-
-                        <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
-
-                        <p class="text-muted">Malibu, California</p>
-
-                        <hr>
-
-                        <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
-
-                        <p class="text-muted">
-                            <span class="tag tag-danger">UI Design</span>
-                            <span class="tag tag-success">Coding</span>
-                            <span class="tag tag-info">Javascript</span>
-                            <span class="tag tag-warning">PHP</span>
-                            <span class="tag tag-primary">Node.js</span>
-                        </p>
-
-                        <hr>
-
-                        <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
-
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
                     </div>
                     <!-- /.card-body -->
                 </div>
@@ -91,100 +60,13 @@
                         <div class="tab-content">
                             <div class="active tab-pane" id="activity">
                                 <p>
-                                    Dieta ta jest przeznaczona dla osób którym zależy na niskim ideksie glikemiczny
+                                    @DietDetail.DietDescryption
                                 </p>
                                 <!-- /.post -->
                             </div>
                             <!-- /.tab-pane -->
                             <div class="tab-pane" id="timeline">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Dostępne diety</h3>
-
-                                        <div class="card-tools">
-                                            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                                                <i class="fas fa-minus"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-                                                <i class="fas fa-times"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-0">
-                                        <table class="table table-striped projects">
-                                            <thead>
-                                                <tr>
-                                                    <th style="auto" class="text-center">
-                                                        Numer
-                                                    </th>
-                                                    <th style="auto" class="text-center">
-                                                        Nazwa diety
-                                                    </th>
-                                                    <th style="auto" class="text-center">
-                                                        Indeks glikemiczny
-                                                    </th>
-                                                    <th style="auto" class="text-center">
-                                                        Zawartość protein
-                                                    </th>
-                                                    <th style="auto" class="text-center">
-                                                        Zawartość węglowodanów
-                                                    </th>
-                                                    <th style="auto" class="text-center">
-                                                        Zawartość tłuszczu
-                                                    </th>
-                                                    <th>
-
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <p>
-                                                            1
-                                                        </p>
-                                                    </td>
-                                                    <td>
-                                                        Dieta niskoglikemiczna
-                                                        <br />
-                                                        <small>
-                                                            Polecana dla diebetyków
-                                                        </small>
-                                                    </td>
-                                                    <td>
-                                                        <p class="text-center">
-                                                            Średni
-                                                        </p>
-                                                    </td>
-                                                    <td>
-                                                        <p class="text-center">
-                                                            Średnia
-                                                        </p>
-                                                    </td>
-                                                    <td>
-                                                        <p class="text-center">
-                                                            Niska
-                                                        </p>
-                                                    </td>
-                                                    <td>
-                                                        <p class="text-center">
-                                                            Średnia
-                                                        </p>
-                                                    </td>
-                                                    <td class="project-actions text-right">
-                                                        <a class="btn btn-primary btn-sm" href="/dietdescryption">
-                                                            <i class="fas fa-folder">
-                                                            </i>
-                                                            Zobacz więcej informacji
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- /.card-body -->
-                                </div>
-                                <!-- /.card -->
+                                <ManagerDiet.Client.Components.Meals.ViewComponents.MealsList></ManagerDiet.Client.Components.Meals.ViewComponents.MealsList>
                             </div>
                             <!-- /.tab-pane -->
 
@@ -249,3 +131,15 @@
     </div><!-- /.container-fluid -->
 </section>
 <!-- /.content -->
+}
+@code{
+    public DietDetailVm DietDetail { get; set; }
+
+    [Parameter]
+    public int Id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        DietDetail = await http.GetFromJsonAsync<DietDetailVm>("api/diet/" + Id);
+    }
+}

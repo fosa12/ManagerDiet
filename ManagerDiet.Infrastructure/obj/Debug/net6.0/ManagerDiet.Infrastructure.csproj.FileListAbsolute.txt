@@ -15,3 +15,5 @@ C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\obj\Debug\net6.0\M
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\obj\Debug\net6.0\ref\ManagerDiet.Infrastructure.dll
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\bin\Debug\net6.0\ManagerDiet.Application.dll
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\bin\Debug\net6.0\ManagerDiet.Application.pdb
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\bin\Debug\net6.0\ManagerDiet.Shared.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet.Infrastructure\bin\Debug\net6.0\ManagerDiet.Shared.pdb

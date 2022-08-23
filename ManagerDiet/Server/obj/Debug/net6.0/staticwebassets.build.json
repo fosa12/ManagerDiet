@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "reRhDjLGCSG1a9LqZJPJM/ANingWe7aOVNL7MhhZCrE=",
+  "Hash": "m9IqQ42jYkAael71O0fPz/rGMob3z322DlhoiZWtLgc=",
   "Source": "ManagerDiet.Server",
   "BasePath": "_content/ManagerDiet.Server",
   "Mode": "Default",
@@ -248,6 +248,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net6.0\\ManagerDiet.Client.pdb"
+    },
+    {
+      "Identity": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\ManagerDiet.Domain.dll",
+      "SourceId": "ManagerDiet.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/ManagerDiet.Domain.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet.Domain\\bin\\Debug\\net6.0\\ManagerDiet.Domain.dll"
+    },
+    {
+      "Identity": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\ManagerDiet.Domain.pdb",
+      "SourceId": "ManagerDiet.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/ManagerDiet.Domain.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet.Domain\\bin\\Debug\\net6.0\\ManagerDiet.Domain.pdb"
     },
     {
       "Identity": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\ManagerDiet.Shared.dll",
@@ -3497,6 +3531,23 @@
       "OriginalItemSpec": "C:\\Users\\liczn\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.7\\runtimes\\browser-wasm\\lib\\net6.0\\WindowsBase.dll"
     },
     {
+      "Identity": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Client\\obj\\Debug\\net6.0\\build-gz\\+CPJJ2Fv.gz",
+      "SourceId": "ManagerDiet.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/ManagerDiet.Domain.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\ManagerDiet.Domain.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\ManagerDiet.Domain.pdb"
+    },
+    {
       "Identity": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Client\\obj\\Debug\\net6.0\\build-gz\\+G60K+dZ.gz",
       "SourceId": "ManagerDiet.Client",
       "SourceType": "Project",
@@ -4770,6 +4821,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileSystemGlobbing.dll"
+    },
+    {
+      "Identity": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Client\\obj\\Debug\\net6.0\\build-gz\\fQBbJcrR.gz",
+      "SourceId": "ManagerDiet.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/ManagerDiet.Domain.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\ManagerDiet.Domain.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\ManagerDiet.Domain.dll"
     },
     {
       "Identity": "C:\\repoGit\\ManagerDiet\\ManagerDiet\\ManagerDiet\\Client\\obj\\Debug\\net6.0\\build-gz\\FrS2WIJD.gz",

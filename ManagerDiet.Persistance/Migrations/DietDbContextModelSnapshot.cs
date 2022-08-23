@@ -271,6 +271,50 @@ namespace ManagerDiet.Persistance.Migrations
                     b.ToTable("EatedMeals");
                 });
 
+            modelBuilder.Entity("ManagerDiet.Domain.Entities.Ingredient", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("Inactivated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("InactivatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MealId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("Modified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("StatusId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MealId");
+
+                    b.ToTable("Ingredients");
+                });
+
             modelBuilder.Entity("ManagerDiet.Domain.Entities.Meal", b =>
                 {
                     b.Property<int>("Id")
@@ -296,6 +340,9 @@ namespace ManagerDiet.Persistance.Migrations
                     b.Property<string>("InactivatedBy")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("KCAL")
+                        .HasColumnType("int");
+
                     b.Property<DateTime?>("Modified")
                         .HasColumnType("datetime2");
 
@@ -309,10 +356,6 @@ namespace ManagerDiet.Persistance.Migrations
 
                     b.Property<int>("PreparationTimeInMin")
                         .HasColumnType("int");
-
-                    b.Property<string>("ProductsNeededToPrepareMeal")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("QuantityCarboInGrams")
                         .HasColumnType("int");
@@ -437,6 +480,17 @@ namespace ManagerDiet.Persistance.Migrations
                     b.Navigation("Meal");
                 });
 
+            modelBuilder.Entity("ManagerDiet.Domain.Entities.Ingredient", b =>
+                {
+                    b.HasOne("ManagerDiet.Domain.Entities.Meal", "Meal")
+                        .WithMany("Ingredients")
+                        .HasForeignKey("MealId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Meal");
+                });
+
             modelBuilder.Entity("ManagerDiet.Domain.Entities.UserInformation", b =>
                 {
                     b.HasOne("ManagerDiet.Domain.Entities.Diet", "Diet")
@@ -485,6 +539,8 @@ namespace ManagerDiet.Persistance.Migrations
             modelBuilder.Entity("ManagerDiet.Domain.Entities.Meal", b =>
                 {
                     b.Navigation("EatedMeals");
+
+                    b.Navigation("Ingredients");
                 });
 
             modelBuilder.Entity("ManagerDiet.Domain.Entities.UserInformation", b =>

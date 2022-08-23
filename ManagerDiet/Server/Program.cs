@@ -2,6 +2,8 @@ using ManagerDiet.Application;
 using ManagerDiet.Infrastructure;
 using ManagerDiet.Persistance;
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,11 +11,21 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+
 builder.Services.AddPresistance(builder.Configuration);
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApplication();
+
+builder.Services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Logging.ClearProviders();
+
+var logger = new LoggerConfiguration().WriteTo.Console().CreateLogger();
+
+builder.Logging.AddSerilog(logger);
 
 var app = builder.Build();
 

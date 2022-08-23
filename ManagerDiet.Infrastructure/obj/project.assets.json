@@ -319,6 +319,7 @@
           "FluentValidation": "10.4.0",
           "FluentValidation.DependencyInjectionExtensions": "10.4.0",
           "ManagerDiet.Domain": "1.0.0",
+          "ManagerDiet.Shared": "1.0.0",
           "MediatR": "10.0.1",
           "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
           "Microsoft.EntityFrameworkCore": "6.0.8"
@@ -338,6 +339,20 @@
         },
         "runtime": {
           "bin/placeholder/ManagerDiet.Domain.dll": {}
+        }
+      },
+      "ManagerDiet.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FluentValidation": "10.4.0",
+          "ManagerDiet.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ManagerDiet.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ManagerDiet.Shared.dll": {}
         }
       }
     }
@@ -892,6 +907,11 @@
       "type": "project",
       "path": "../ManagerDiet.Domain/ManagerDiet.Domain.csproj",
       "msbuildProject": "../ManagerDiet.Domain/ManagerDiet.Domain.csproj"
+    },
+    "ManagerDiet.Shared/1.0.0": {
+      "type": "project",
+      "path": "../ManagerDiet/Shared/ManagerDiet.Shared.csproj",
+      "msbuildProject": "../ManagerDiet/Shared/ManagerDiet.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {

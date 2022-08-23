@@ -15,8 +15,6 @@ namespace ManagerDiet.Persistance.Configurations
         {
             builder.Property(p => p.Name).IsRequired().HasMaxLength(100);
 
-            builder.Property(p => p.ProductsNeededToPrepareMeal).IsRequired();
-
             builder.Property(p => p.Recipe).IsRequired();
 
             builder.Property(p => p.PreparationTimeInMin).IsRequired();

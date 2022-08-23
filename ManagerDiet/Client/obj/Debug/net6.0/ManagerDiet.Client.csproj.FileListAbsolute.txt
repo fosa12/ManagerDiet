@@ -830,3 +830,11 @@ C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Client\bin\Debug\net6.0\wwwroot\_
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Client\bin\Debug\net6.0\Blazored.FluentValidation.dll
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Client\obj\Debug\net6.0\build-gz\8IUHgiK5.gz
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Client\obj\Debug\net6.0\build-gz\5Ou5o+ev.gz
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Client\bin\Debug\net6.0\wwwroot\_framework\ManagerDiet.Domain.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Client\bin\Debug\net6.0\wwwroot\_framework\ManagerDiet.Domain.pdb
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Client\bin\Debug\net6.0\wwwroot\_framework\ManagerDiet.Domain.pdb.gz
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Client\bin\Debug\net6.0\wwwroot\_framework\ManagerDiet.Domain.dll.gz
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Client\bin\Debug\net6.0\ManagerDiet.Domain.dll
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Client\bin\Debug\net6.0\ManagerDiet.Domain.pdb
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Client\obj\Debug\net6.0\build-gz\fQBbJcrR.gz
+C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Client\obj\Debug\net6.0\build-gz\+CPJJ2Fv.gz

@@ -10,7 +10,6 @@ namespace ManagerDiet.Domain.Entities
     public class Meal : AuditableEntity
     {
         public string Name { get; set; }
-        public string ProductsNeededToPrepareMeal { get; set; }
         public string Recipe { get; set; }
         public int PreparationTimeInMin { get; set; }
         public string GlycemicIndex { get; set; }
@@ -19,7 +18,10 @@ namespace ManagerDiet.Domain.Entities
         public double QuantitySugar { get; set; }
         public int QuantityFatInGrams { get; set; }
         public double QuantitySaturatedFatInGrams { get; set; }
+        public int KCAL { get; set; }
         public ICollection<EatedMeal> EatedMeals { get; set; }
         public ICollection<Diet> Diets { get; set; }
+        public ICollection<Ingredient> Ingredients { get; set; }
+
     }
 }
