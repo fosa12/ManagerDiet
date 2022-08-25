@@ -1,0 +1,66 @@
+﻿@page "/caloricdemand/add"
+@using Blazored.FluentValidation
+@using ManagerDiet.Client.Components.CaloricDemand.EditComponents
+@using ManagerDiet.Shared.Diets.Commands
+@inject HttpClient http;
+
+<EditForm Model="@NewCaloricDemand" OnSubmit="OnSubmitMethod">
+    <FluentValidationValidator />
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>General Form</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">General Form</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-md-*">
+                <CaloricDemandCreateForm NewCaloricDemand="@NewCaloricDemand" />
+                <!--/.col (right) -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <div class="card-footer">
+            <input type="submit" value="Oblicz zapotrzebowanie kaloryczne" class="btn btn-primary">
+        </div>
+    </section>
+    <!-- /.content -->
+    @*<ValidationSummary />*@
+</EditForm>
+
+
+
+
+
+@code {
+    public CreateCaloricDemandVm NewCaloricDemand { get; set; } = new();
+
+
+    private async void OnSubmitMethod(EditContext editContext)
+    {
+        if (editContext.Validate())
+        {
+
+            var response = await http.PostAsJsonAsync("api/diet", NewCaloricDemand);
+            var json = await response.Content.ReadAsStringAsync();
+
+            //Navigator.NavigateTo("/dietdescryption/" + int.Parse(json));
+
+            Console.WriteLine("Diet has been validated");
+        }
+        else
+        {
+            Console.WriteLine("Diet hasn't been validated");
+        }
+    }
+}

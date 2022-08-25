@@ -18,6 +18,7 @@ namespace ManagerDiet.Shared.Diets.Queries.GetMealDetail
         public double QuantitySugar { get; set; }
         public int QuantityFatInGrams { get; set; }
         public double QuantitySaturatedFatInGrams { get; set; }
+        public int KCAL { get; set; }
 
         public List<IngredientToMealDetailVm> Ingredients { get; set; }
     }

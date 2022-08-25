@@ -51,7 +51,8 @@ namespace ManagerDiet.Application.Diets.Queries.GetMealDetail
                 QuantitySaturatedFatInGrams = mealVm.QuantitySaturatedFatInGrams,
                 QuantityFatInGrams = mealVm.QuantityFatInGrams,
                 QuantitySugar = mealVm.QuantitySugar,
-                Ingredients = ingredientsToShow
+                Ingredients = ingredientsToShow,
+                KCAL = mealVm.KCAL
             };
             return result;
         }

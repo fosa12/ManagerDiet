@@ -1,0 +1,56 @@
+﻿@using ManagerDiet.Shared.Diets.Commands
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Wprowadź dane aby uzyskać swoje dzienne zapotrzebowanie na kalorie i makroelementy</h3>
+    </div>
+    <div class="card-body">
+        <label for="weight">Waga (kg)</label>
+        <InputNumber id="weight" @bind-Value="NewCaloricDemand.Weight" placeholder="np. 80 - bez dopisku kg" class="form-control" />
+        <ValidationMessage For="() => NewCaloricDemand.Weight" />
+
+        <label for="height">Wzrost (cm)</label>
+        <InputNumber id="height" @bind-Value="NewCaloricDemand.Height" placeholder="np. 180 - bez dopisku cm" class="form-control" />
+        <ValidationMessage For="() => NewCaloricDemand.Height" />
+
+        <label for="age">Wiek (cm)</label>
+        <InputNumber id="age" @bind-Value="NewCaloricDemand.Height" placeholder="np. 18" class="form-control" />
+        <ValidationMessage For="() => NewCaloricDemand.Height" />
+
+        <label for="sex">Płeć</label>
+        <InputSelect id="sex" @bind-Value="NewCaloricDemand.Sex" rows="" class="form-control">
+            <option value="">----Wybierz swoją płeć----</option>
+            <option value="Woman">Kobieta</option>
+            <option value="Man">Mężczyzna</option>
+        </InputSelect>
+        <ValidationMessage For="() => NewCaloricDemand.Sex" />
+
+        <label for="activity">Aktywność fizyczna</label>
+        <InputSelect id="activity" @bind-Value="NewCaloricDemand.Activity" rows="" class="form-control">
+            <option value="">----Wybierz odpowiednią aktywność fizyczną----</option>
+            <option value="Lackofphysicalactivity">Praca przy biurku, brak aktywności fizycznej, chory lub osoba leżąca</option>
+            <option value="Lightactivity">Pracownik biurowy, którego jedyną aktywnością fizyczną są obowiązki domwe (sprzątanie, odkurzanie itp)</option>
+            <option value="Averageactivity">Pacownik biurowy, trening 2-3 razy w tygodniu przez minimum godzinę</option>
+            <option value="Highactivity">Pacownik biurowy, trening 3-4 razy w tygodniu przez minimum godzinę</option>
+            <option value="Veryhighphysicalactivity">Profesjonalny sportowiec, który trenuję minimum 5 dni w tygodniu minimum godzinę, lub osoba wykonująca ciężką pracę fizyczną</option>
+        </InputSelect>
+        <ValidationMessage For="() => NewCaloricDemand.Activity" />
+
+        <label for="goal">Cel dietetyczny</label>
+        <InputSelect id="goal" @bind-Value="NewCaloricDemand.Goal" rows="" class="form-control">
+            <option value="">----Wybierz cel dietetyczny----</option>
+            <option value="Weight lose">Chcę schudnąć</option>
+            <option value="Weight maintenance">Chcę utrzymać masę</option>
+            <option value="Weight gain">Chcę przybrać na masie</option>
+        </InputSelect>
+        <ValidationMessage For="() => NewCaloricDemand.Activity" />
+    </div>
+    <!-- /.card-body -->
+    <!-- /.card -->
+</div>
+
+@code {
+    [Parameter]
+    public CreateCaloricDemandVm NewCaloricDemand { get; set; }
+
+}

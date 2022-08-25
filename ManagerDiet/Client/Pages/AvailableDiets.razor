@@ -1,7 +1,9 @@
 ﻿@page "/availablediets"
+@using ManagerDiet.Shared.Diets.Queries.GetDietLists
+@inject HttpClient http
 
 <!-- Main content -->
-@if (DietInformationList == null && !DietInformationList.Any())
+@if (Diets == null)
 {
     <p>Loading...</p>
 }
@@ -47,7 +49,7 @@ else
                             </th>
                         </tr>
                     </thead>
-                    @foreach (var item in DietInformationList)
+                    @foreach (var item in Diets)
                     {
                         <tbody>
                             <tr>
@@ -71,7 +73,7 @@ else
                                     @item.QuantityFat
                                 </td>
                                 <td class="project-actions text-right">
-                                    <a class="btn btn-primary btn-sm" href="/dietdescryption">
+                                    <a class="btn btn-primary btn-sm" href="/dietdescryption/@item.Id">
                                         <i class="fas fa-folder">
                                         </i>
                                         Zobacz więcej informacji
@@ -85,55 +87,21 @@ else
             <!-- /.card-body -->
         </div>
         <!-- /.card -->
-
+        <a href="/availablediets/add" class="btn btn-warning btn-block"><b>Dodaj nową dietę</b></a>
     </section>
 }
 <!-- /.content -->
 @code {
-    public List<DietInformation> DietInformationList { get; set; }
+    public List<DietForListVm> Diets { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        DietInformationList = new List<DietInformation>();
+        Diets = await http.GetFromJsonAsync<List<DietForListVm>>("api/diet");
 
-        var dietinfo1 = new DietInformation
-            {
-                Id = 1,
-                DietName = "Dieta niskoglikemiczna",
-                DietShortDescryption = "Polecana dla diabetyków",
-                GlycemicIndex = "Niski",
-                QuantityProtein = "Średnia",
-                QuantityCarbo = "Niska",
-                QuantityFat = "Średnia"
-            };
-        var dietinfo2 = new DietInformation
-            {
-                Id = 1,
-                DietName = "Dieta wysokobiałkowa",
-                DietShortDescryption = "Polecana dla sportowców",
-                GlycemicIndex = "Średni",
-                QuantityProtein = "Wysoka",
-                QuantityCarbo = "Średnia",
-                QuantityFat = "Średnia"
-            };
-
-
-        DietInformationList.Add(dietinfo1);
-        DietInformationList.Add(dietinfo2);
 
     }
 
 
-    public class DietInformation
-    {
-        public int Id { get; set; }
-        public string DietName { get; set; }
-        public string DietShortDescryption { get; set; }
-        public string GlycemicIndex { get; set; }
-        public string QuantityProtein { get; set; }
-        public string QuantityCarbo { get; set; }
-        public string QuantityFat { get; set; }
-    }
 
 
     }

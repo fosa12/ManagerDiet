@@ -22,27 +22,27 @@
         <InputSelect id="glycemicIndex" @bind-Value="NewDiet.GlycemicIndex" rows="" class="form-control">
 
             <option value="">----Wybierz odpowiedni średni index----</option>
-            <option value="@NewDiet.GlycemicIndex">Niski</option>
-            <option value="@NewDiet.GlycemicIndex">Średni</option>
-            <option value="@NewDiet.GlycemicIndex">Wysoki</option>
+            <option value="Niski">Niski</option>
+            <option value="Średni">Średni</option>
+            <option value="Wysoki">Wysoki</option>
         </InputSelect>
         <ValidationMessage For="() => NewDiet.GlycemicIndex" />
 
         <label for="protein">Zawartość białka</label>
         <InputSelect id="protein" @bind-Value="NewDiet.QuantityProtein" rows="" class="form-control">
             <option value="">----Wybierz odpowiednią średnią zawartość białka----</option>
-            <option value="@NewDiet.QuantityProtein">Niska</option>
-            <option value="@NewDiet.QuantityProtein">Średnia</option>
-            <option value="@NewDiet.QuantityProtein">Wysoka</option>
+            <option value="Niska">Niska</option>
+            <option value="Średnia">Średnia</option>
+            <option value="Wysoka">Wysoka</option>
         </InputSelect>
         <ValidationMessage For="() => NewDiet.QuantityProtein" />
 
         <label for="carbo">Zawartość węglowodanych</label>
         <InputSelect id="carbo" @bind-Value="NewDiet.QuantityCarbo" rows="" class="form-control">
             <option value="">----Wybierz odpowiednią średnią zawartość białka----</option>
-            <option value="@NewDiet.QuantityCarbo">Niska</option>
-            <option value="@NewDiet.QuantityCarbo">Średnia</option>
-            <option value="@NewDiet.QuantityCarbo">Wysoka</option>
+            <option value="Niska">Niska</option>
+            <option value="Średnia">Średnia</option>
+            <option value="Wysoka">Wysoka</option>
 
         </InputSelect>
         <ValidationMessage For="() => NewDiet.QuantityCarbo" />
@@ -50,9 +50,9 @@
         <label for="glycemicIndex">Zawartość tłuszczu</label>
         <InputSelect id="glycemicIndex" @bind-Value="NewDiet.QuantityFat" rows="" class="form-control">
             <option value="">----Wybierz odpowiednią średnią zawartość tłuszczu----</option>
-            <option value="@NewDiet.QuantityFat">Niska</option>
-            <option value="@NewDiet.QuantityFat">Średnia</option>
-            <option value="@NewDiet.QuantityFat">Wysoka</option>
+            <option value="Niska">Niska</option>
+            <option value="Średnia">Średnia</option>
+            <option value="Wysoka">Wysoka</option>
 
         </InputSelect>
         <ValidationMessage For="() => NewDiet.QuantityFat" />

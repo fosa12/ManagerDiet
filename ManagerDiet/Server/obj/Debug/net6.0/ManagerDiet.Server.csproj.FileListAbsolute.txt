@@ -100,7 +100,6 @@ C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\Microsoft
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\obj\Debug\net6.0\ManagerDiet.Server.MvcApplicationPartsAssemblyInfo.cs
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\repoGit\ManagerDiet\ManagerDiet\ManagerDiet\Server\bin\Debug\net6.0\Serilog.dll

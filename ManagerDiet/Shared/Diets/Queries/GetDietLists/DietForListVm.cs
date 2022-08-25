@@ -8,6 +8,7 @@ namespace ManagerDiet.Shared.Diets.Queries.GetDietLists
 {
     public class DietForListVm
     {
+        public int Id { get; set; }
         public string DietName { get; set; }
         public string DietShortDescryption { get; set; }
         public string GlycemicIndex { get; set; }

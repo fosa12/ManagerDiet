@@ -42,7 +42,7 @@ namespace ManagerDiet.Server.Controllers
             return Ok(result);
         }
         [HttpGet("caloricDemand/{userId}")]
-        public async Task<ActionResult<CaloricDemandVm>> GetAsyncCaloricDemand(int userId)
+        public async Task<ActionResult<CaloricDemandVm>> GetCaloricDemandDetails(int userId)
         {
             var vm = await Mediator.Send(new GetCaloricDemandQuery() { UserId = userId });
 

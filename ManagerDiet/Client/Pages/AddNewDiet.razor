@@ -1,6 +1,6 @@
 ﻿@page "/availablediets/add"
 @inject HttpClient http;
-
+@inject NavigationManager Navigator
 
 
 @using ManagerDiet.Client.Components.Diets.EditComponents
@@ -37,8 +37,6 @@
             <input type="submit" value="Dodaj nową dietę" class="btn btn-primary">
         </div>
     </section>
-
-    <p>@NewDiet.DietName</p>
     <!-- /.content -->
     @*<ValidationSummary />*@
 </EditForm>
@@ -53,8 +51,13 @@
     {
         if (editContext.Validate())
         {
-            Console.WriteLine("Diet has been validated");
+
             var response = await http.PostAsJsonAsync("api/diet", NewDiet);
+            var json = await response.Content.ReadAsStringAsync();
+
+            Navigator.NavigateTo("/dietdescryption/" + int.Parse(json));
+
+            Console.WriteLine("Diet has been validated");
         }
         else
         {

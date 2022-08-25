@@ -33,6 +33,7 @@ namespace ManagerDiet.Application.Diets.Queries.GetDietLists
             {
                 DietForListVm dietForListVm = new DietForListVm()
                 {
+                    Id = diet.Id,
                     DietName = diet.DietName,
                     DietShortDescryption = diet.DietShortDescryption,
                     GlycemicIndex = diet.GlycemicIndex,

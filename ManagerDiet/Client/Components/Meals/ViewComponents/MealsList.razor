@@ -1,5 +1,12 @@
-﻿
+﻿@using ManagerDiet.Shared.Diets.Queries.GetMealLists
+@inject HttpClient http;
 
+@if (Meals == null)
+{
+    <p>Loading...</p>
+}
+else
+{
 <div class="card">
     <div class="card-header">
         <h3 class="card-title">Dostępne diety</h3>
@@ -41,53 +48,67 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            1
-                        </p>
-                    </td>
-                    <td>
-                        Nazwa Diety
-                        <br />
-                        <small>
-                            Polecana dla diebetyków
-                        </small>
-                    </td>
-                    <td>
-                        <p class="text-center">
-                            Średni
-                        </p>
-                    </td>
-                    <td>
-                        <p class="text-center">
-                            Średnia
-                        </p>
-                    </td>
-                    <td>
-                        <p class="text-center">
-                            Niska
-                        </p>
-                    </td>
-                    <td>
-                        <p class="text-center">
-                            Średnia
-                        </p>
-                    </td>
-                    <td class="project-actions text-right">
-                        <a class="btn btn-primary btn-sm" href="/dietdescryption">
-                            <i class="fas fa-folder">
-                            </i>
-                            Zobacz więcej informacji
-                        </a>
-                    </td>
-                </tr>
+                @foreach (var meal in Meals)
+                {
+
+
+                    <tr>
+                        <td>
+                            <p>
+                                @Number
+                            </p>
+                        </td>
+                        <td>
+                            @meal.Name
+                        </td>
+                        <td>
+                            <p class="text-center">
+                                @meal.GlycemicIndex
+                            </p>
+                        </td>
+                        <td>
+                            <p class="text-center">
+                                @meal.QuantityProteinInGrams
+                            </p>
+                        </td>
+                        <td>
+                            <p class="text-center">
+                                @meal.QuantityCarboInGrams
+                            </p>
+                        </td>
+                        <td>
+                            <p class="text-center">
+                                @meal.QuantityFatInGrams
+                            </p>
+                        </td>
+                        <td class="project-actions text-right">
+                            <a class="btn btn-primary btn-sm" href="/dietdescryption">
+                                <i class="fas fa-folder">
+                                </i>
+                                Zobacz więcej informacji
+                            </a>
+                        </td>
+                    </tr>
+                }
             </tbody>
         </table>
     </div>
     <!-- /.card-body -->
 </div>
 <!-- /.card -->
+}
 @code {
+    public List<MealForListVm> Meals { get; set; }
 
+    protected override async Task OnInitializedAsync()
+    {
+        Meals = await http.GetFromJsonAsync<List<MealForListVm>>("api/meals");
+        Number = 1;
+    }
+    private int _number;
+    public int Number 
+    { 
+        get{ return _number++; } 
+        set{ _number = value; }
+    }
 }

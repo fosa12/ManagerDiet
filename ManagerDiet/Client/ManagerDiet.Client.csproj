@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Components\CaloricDemand\ViewComponents\" />
     <Folder Include="Components\Diets\ViewComponents\" />
   </ItemGroup>
 
