@@ -1,3 +1,28 @@
-﻿@page "/mydiet"
+﻿@page "/mydiet/{id:int}"
+@using ManagerDiet.Client.Components.CaloricDemand.ViewComponents
+@using ManagerDiet.Shared.Diets.Queries.GetCaloricDemand
+@inject HttpClient http;
 
+@if (CaloricDemand == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div>
+        <CaloricDemandView CaloricDemand="@CaloricDemand"></CaloricDemandView>
+    </div>
+}
 
+@code {
+    public CaloricDemandVm CaloricDemand { get; set; }
+
+    [Parameter]
+    public int Id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        CaloricDemand = await http.GetFromJsonAsync<CaloricDemandVm>("api/diet/caloricDemand/" + Id);
+        Console.WriteLine("test");
+    }
+}

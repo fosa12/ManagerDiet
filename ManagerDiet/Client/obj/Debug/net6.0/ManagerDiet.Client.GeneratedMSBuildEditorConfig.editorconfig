@@ -26,8 +26,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYWxvcmljRGVtYW5kXEVkaXRDb21wb25lbnRzXENhbG9yaWNEZW1hbmRDcmVhdGVGb3JtLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Components/CaloricDemand/ViewComponents/CaloricDemandView.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYWxvcmljRGVtYW5kXFZpZXdDb21wb25lbnRzXENhbG9yaWNEZW1hbmRWaWV3LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Components/Diets/EditComponents/DietAddForm.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEaWV0c1xFZGl0Q29tcG9uZW50c1xEaWV0QWRkRm9ybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Components/Meals/EditComponents/MealCreate.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNZWFsc1xFZGl0Q29tcG9uZW50c1xNZWFsQ3JlYXRlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Components/Meals/ViewComponents/MealsList.razor]

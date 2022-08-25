@@ -1,0 +1,57 @@
+﻿@using ManagerDiet.Shared.Diets.Queries.GetCaloricDemand
+
+
+@if (CaloricDemand == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+<!-- Main content -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+
+                    <!-- Profile Image -->
+                    <div class="card card-primary card-outline">
+                        <div class="card-body box-profile">
+
+
+                            <h3 class="text-center">Zapotrzebowanie na kalorie i makroelementy</h3>
+
+
+
+                            <ul class="list-group list-group-unbordered mb-3">
+                                <li class="list-group-item">
+                                    <b>Kalorie:</b> <p class="float-right">@CaloricDemand.DailyRequirementKcal kcal</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Zapotrzebowanie na białko:</b> <p class="float-right">@CaloricDemand.DailyRequirementProtein g </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Zapotrzebowanie na węglowodany:</b> <p class="float-right">@CaloricDemand.DailyRequirementCarbo g</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Zapotrzebowanie na tłuszcze:</b> <p class="float-right">@CaloricDemand.DailyRequirementFat g</p>
+                                </li>
+                            </ul>
+                            
+                        <a href="/caloricdemand/add" class="btn btn-success btn-block"><b>Oblicz nowe zapotrzebowanie kaloryczne</b></a>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+}
+@code{
+    [Parameter]
+    public CaloricDemandVm CaloricDemand { get; set; }
+}

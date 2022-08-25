@@ -1,0 +1,35 @@
+﻿@using ManagerDiet.Shared.Diets.Commands
+
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Wprowadź dane aby uzyskać swoje dzienne zapotrzebowanie na kalorie i makroelementy</h3>
+    </div>
+    <div class="card-body">
+        <label for="name">Nazwa potrawy</label>
+        <InputNumber id="name" @bind-Value="NewMeal.Name" placeholder="wpisz nazwę potrawy" class="form-control" />
+        <ValidationMessage For="() => NewMeal.Name" />
+
+        <label for="recipe">Przepis</label>
+        <InputNumber id="recipe" @bind-Value="NewCaloricDemand.Height" placeholder="np. 180 - bez dopisku cm" class="form-control" />
+        <ValidationMessage For="() => NewCaloricDemand.Height" />
+
+        <label for="age">Wiek (cm)</label>
+        <InputNumber id="age" @bind-Value="NewCaloricDemand.Height" placeholder="np. 18" class="form-control" />
+        <ValidationMessage For="() => NewCaloricDemand.Height" />
+
+        <label for="sex">Płeć</label>
+        <InputSelect id="sex" @bind-Value="NewCaloricDemand.Sex" rows="" class="form-control">
+            <option value="">----Wybierz swoją płeć----</option>
+            <option value="Woman">Kobieta</option>
+            <option value="Man">Mężczyzna</option>
+        </InputSelect>
+        <ValidationMessage For="() => NewCaloricDemand.Sex" />
+    </div>
+    <!-- /.card-body -->
+    <!-- /.card -->
+</div>
+
+@code{
+    public CreateMealVm NewMeal { get; set; }
+}
