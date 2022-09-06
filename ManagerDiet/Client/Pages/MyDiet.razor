@@ -1,6 +1,7 @@
 ﻿@page "/mydiet/{id:int}"
 @using ManagerDiet.Client.Components.CaloricDemand.ViewComponents
 @using ManagerDiet.Shared.Diets.Queries.GetCaloricDemand
+@using ManagerDiet.Shared.Diets.Queries.GetEatedMealForIndex
 @inject HttpClient http;
 
 @if (CaloricDemand == null)
@@ -9,13 +10,35 @@
 }
 else
 {
-    <div>
-        <CaloricDemandView CaloricDemand="@CaloricDemand"></CaloricDemandView>
+@*    <div class="container">
+        <div class="row">
+            <div class="col-*">
+                <CaloricDemandView CaloricDemand="@CaloricDemand"></CaloricDemandView>
+            </div>
+            <div class="col-*">
+                <ManagerDiet.Client.Components.Diets.ViewComponents.EatedCaloricAndMakroInDay EatedMakroAndKCALInDay="@EatedMakroAndKCALInDay"></ManagerDiet.Client.Components.Diets.ViewComponents.EatedCaloricAndMakroInDay>
+            </div>
+        </div>
+    </div>*@
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <CaloricDemandView CaloricDemand="@CaloricDemand"></CaloricDemandView>
+
+            </div>
+            <div class="col">
+                <ManagerDiet.Client.Components.Diets.ViewComponents.EatedCaloricAndMakroInDay EatedMakroAndKCALInDay="@EatedMakroAndKCALInDay"></ManagerDiet.Client.Components.Diets.ViewComponents.EatedCaloricAndMakroInDay>
+
+            </div>
+        </div>
     </div>
 }
 
 @code {
     public CaloricDemandVm CaloricDemand { get; set; }
+
+    public EatedMealForIndexVm EatedMakroAndKCALInDay { get; set; }
 
     [Parameter]
     public int Id { get; set; }
@@ -23,6 +46,9 @@ else
     protected override async Task OnInitializedAsync()
     {
         CaloricDemand = await http.GetFromJsonAsync<CaloricDemandVm>("api/diet/caloricDemand/" + Id);
+
+        EatedMakroAndKCALInDay = await http.GetFromJsonAsync<EatedMealForIndexVm>("api/meals/" + Id + "/" + "2022-09-05");
+
         Console.WriteLine("test");
     }
 }

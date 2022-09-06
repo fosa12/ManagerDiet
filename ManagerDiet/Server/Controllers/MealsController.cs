@@ -1,8 +1,10 @@
 ﻿using ManagerDiet.Application.Diets.Commands.CreateMeal;
 using ManagerDiet.Application.Diets.Commands.DeleteMeal;
+using ManagerDiet.Application.Diets.Queries.GetEatedMealForIndex;
 using ManagerDiet.Application.Diets.Queries.GetMealDetail;
 using ManagerDiet.Application.Diets.Queries.GetMealLists;
 using ManagerDiet.Shared.Diets.Commands;
+using ManagerDiet.Shared.Diets.Queries.GetEatedMealForIndex;
 using ManagerDiet.Shared.Diets.Queries.GetMealDetail;
 using ManagerDiet.Shared.Diets.Queries.GetMealLists;
 using Microsoft.AspNetCore.Http;
@@ -38,6 +40,13 @@ namespace ManagerDiet.Server.Controllers
         {
             await Mediator.Send(new DeleteMealCommand() { MealToDelteId = id });
             return Ok();
+        }
+        [HttpGet("{id}/{date}")]
+        public async Task<ActionResult<EatedMealForIndexVm>> GetAsync(int id, DateTime date)
+        {
+            var vm = await Mediator.Send(new GetEatedMealForIndexQuery() {UserId = id, DateDayInDiet= date });
+
+            return vm;
         }
     }
 }

@@ -199,16 +199,16 @@
       "netstandard.dll": "sha256-CvlfDmNgFRYT7l\/xZKu91FlbTFyLG\/5cH7YX63k9ghE=",
       "System.Private.CoreLib.dll": "sha256-aF4imeOpA59D6F5qCLabzkeY7MvRZzNYzavhB\/bdxvM=",
       "ManagerDiet.Domain.dll": "sha256-7tlEedXecN\/s8QdYpIlFcckoKqQUjUH+Arh3jZFbTCI=",
-      "ManagerDiet.Shared.dll": "sha256-pVKwStJTuN7e+yyWJIY9iNuktTnNneEfu3za2jgPeXI=",
-      "ManagerDiet.Client.dll": "sha256-EFVAeEYuetqgXPsFJdhLnfUjR+WkLsz2R7x8FqJ5G7Q="
+      "ManagerDiet.Shared.dll": "sha256-\/Anyxi5Y3pk3u3uAbeb9im9f8G5tvUmqp0zcMLtPD7E=",
+      "ManagerDiet.Client.dll": "sha256-wVt9NIFEa+vqq\/soM3fUGTAoG4490DjVQwKp1TlA+KA="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "ManagerDiet.Shared.pdb": "sha256-fuDK7rbVzQ2scARl5m76cVEuRE0rZmQ9xCB2OlSluxM=",
+      "ManagerDiet.Shared.pdb": "sha256-E8bsLiwlI1YnoIzvjXH1+OYtG\/ZEXn8jw0LtPyvhp3o=",
       "ManagerDiet.Domain.pdb": "sha256-H9c6O\/UN7VZmmHr\/gxwjJiZRh7e\/gXMsl757dJTDGH0=",
-      "ManagerDiet.Client.pdb": "sha256-BEu0CTAwq8WbSS6Px6z8Nvx\/ML3QCV2VgaEl82ZWMeo="
+      "ManagerDiet.Client.pdb": "sha256-+eMGQPhKnLA2vG\/d5v9vqJeDlpjnKBcrY4bPsNZc+No="
     },
     "runtime": {
       "dotnet.6.0.7.d619bfsy1s.js": "sha256-pvJcJ6jtDSfxgXm03QYRTm4aAi9PSzMSJODReHtvASY=",

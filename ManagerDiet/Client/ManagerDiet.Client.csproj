@@ -17,8 +17,4 @@
     <ProjectReference Include="..\Shared\ManagerDiet.Shared.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Components\Diets\ViewComponents\" />
-  </ItemGroup>
-
 </Project>

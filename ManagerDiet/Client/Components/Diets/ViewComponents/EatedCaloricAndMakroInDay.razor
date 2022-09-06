@@ -1,0 +1,59 @@
+﻿@using ManagerDiet.Shared.Diets.Queries.GetEatedMealForIndex
+
+
+@if (EatedMakroAndKCALInDay == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+<!-- Main content -->
+    <!-- Main content -->
+@*    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">*@
+
+                    <!-- Profile Image -->
+                    <div class="card card-primary card-outline">
+                        <div class="card-body box-profile">
+
+
+                            <h3 class="text-center">Spożyte kalorie i makroelementy</h3>
+
+
+
+                            <ul class="list-group list-group-unbordered mb-3">
+                                <li class="list-group-item">
+                                    <b>Spożyte Kalorie</b> <p class="float-right">@EatedMakroAndKCALInDay.EatedKcal kcal</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Spożyte białko:</b> <p class="float-right">@EatedMakroAndKCALInDay.EatedProtein g </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Spożyte węglowodany:</b> <p class="float-right">@EatedMakroAndKCALInDay.EatedCarbo g</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Spożyte tłuszcze:</b> <p class="float-right">@EatedMakroAndKCALInDay.EatedFat g</p>
+                                </li>
+                            </ul>
+                            
+                        <a href="@UrlToChangeDayToShow" class="btn btn-success btn-block"><b>Wyświelt statystyki innego dnia</b></a>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+@*                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>*@
+    <!-- /.content -->
+}
+@code{
+    [Parameter]
+    public EatedMealForIndexVm EatedMakroAndKCALInDay { get; set; }
+
+    public string UrlToChangeDayToShow { get; set; }
+}

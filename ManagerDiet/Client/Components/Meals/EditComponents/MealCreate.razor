@@ -3,33 +3,66 @@
 
 <div class="card card-primary">
     <div class="card-header">
-        <h3 class="card-title">Wprowadź dane aby uzyskać swoje dzienne zapotrzebowanie na kalorie i makroelementy</h3>
+        <h3 class="card-title">Wprowadź dane aby dodać nowy posiłek</h3>
     </div>
     <div class="card-body">
         <label for="name">Nazwa potrawy</label>
-        <InputNumber id="name" @bind-Value="NewMeal.Name" placeholder="wpisz nazwę potrawy" class="form-control" />
+        <InputText id="name" @bind-Value="NewMeal.Name" placeholder="Wpisz nazwę potrawy" class="form-control" />
         <ValidationMessage For="() => NewMeal.Name" />
 
         <label for="recipe">Przepis</label>
-        <InputNumber id="recipe" @bind-Value="NewCaloricDemand.Height" placeholder="np. 180 - bez dopisku cm" class="form-control" />
-        <ValidationMessage For="() => NewCaloricDemand.Height" />
+        <InputTextArea id="recipe" @bind-Value="NewMeal.Recipe" rows="" class="form-control" />
+        <ValidationMessage For="() => NewMeal.Recipe" />
 
-        <label for="age">Wiek (cm)</label>
-        <InputNumber id="age" @bind-Value="NewCaloricDemand.Height" placeholder="np. 18" class="form-control" />
-        <ValidationMessage For="() => NewCaloricDemand.Height" />
+        <label for="age">Czas na przygotownia posiłku (min)</label>
+        <InputNumber id="age" @bind-Value="NewMeal.PreparationTimeInMin" placeholder="np. 20" class="form-control" />
+        <ValidationMessage For="() => NewMeal.PreparationTimeInMin" />
 
-        <label for="sex">Płeć</label>
-        <InputSelect id="sex" @bind-Value="NewCaloricDemand.Sex" rows="" class="form-control">
-            <option value="">----Wybierz swoją płeć----</option>
-            <option value="Woman">Kobieta</option>
-            <option value="Man">Mężczyzna</option>
+        <label for="glycemicIndex">Indeks glikemiczny</label>
+        <InputSelect id="glycemicIndex" @bind-Value="NewMeal.GlycemicIndex" rows="" class="form-control">
+            <option value="">----Wybierz odpowiedni średni index----</option>
+            <option value="Niski">Niski</option>
+            <option value="Średni">Średni</option>
+            <option value="Wysoki">Wysoki</option>
         </InputSelect>
-        <ValidationMessage For="() => NewCaloricDemand.Sex" />
+        <ValidationMessage For="() => NewMeal.GlycemicIndex" />
+
+        <label for="kcal">Zawartość kilo kalorii na 100 gram (KCAL)</label>
+        <InputNumber id="kcal" @bind-Value="NewMeal.KCAL" placeholder="np. 20" class="form-control" />
+        <ValidationMessage For="() => NewMeal.KCAL" />
+
+        <label for="quantityProtein">Zawartość białka na 100 gram</label>
+        <InputNumber id="quantityProtein" @bind-Value="NewMeal.QuantityProteinInGrams" placeholder="np. 20" class="form-control" />
+        <ValidationMessage For="() => NewMeal.QuantityProteinInGrams" />
+
+        <label for="quantityCarbo">Zawartość węglowodanych na 100 gram</label>
+        <InputNumber id="quantityCarbo" @bind-Value="NewMeal.QuantityCarboInGrams" placeholder="np. 20" class="form-control" />
+        <ValidationMessage For="() => NewMeal.QuantityCarboInGrams" />
+
+        <label for="quantitySugar">Zawartość cukru na 100 gram</label>
+        <InputNumber id="quantitySugar" @bind-Value="NewMeal.QuantitySugar" placeholder="np. 20" class="form-control" />
+        <ValidationMessage For="() => NewMeal.QuantitySugar" />
+
+        <label for="quantityFat">Zawartość tłuszczu na 100 gram</label>
+        <InputNumber id="quantityFat" @bind-Value="NewMeal.QuantityFatInGrams" placeholder="np. 20" class="form-control" />
+        <ValidationMessage For="() => NewMeal.QuantityFatInGrams" />
+
+        <label for="quantitySaturatedFat">Zawartość tłuszczów nasycnonych na 100 gram</label>
+        <InputNumber id="quantitySaturatedFat" @bind-Value="NewMeal.QuantitySaturatedFatInGrams" placeholder="np. 20" class="form-control" />
+        <ValidationMessage For="() => NewMeal.QuantitySaturatedFatInGrams" />
+
+        <label for="ingredients">Składniki</label>
+        <InputText id="ingredients" @bind-Value="NewMeal.Ingredients" placeholder="Podaj składniki po przecinku np: jajko, ananas, marchewka" class="form-control" />
+        <ValidationMessage For="() => NewMeal.Ingredients" />
+
+
+
     </div>
     <!-- /.card-body -->
     <!-- /.card -->
 </div>
 
-@code{
+@code {
+    [Parameter]
     public CreateMealVm NewMeal { get; set; }
 }
