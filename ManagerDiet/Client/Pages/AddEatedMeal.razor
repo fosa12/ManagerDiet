@@ -1,0 +1,162 @@
+﻿@page "/diet/addEatedMeal"
+
+@using ManagerDiet.Shared.Diets.Queries.GetMealLists
+@inject HttpClient http;
+
+@if (Meals == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+
+
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+            <EditForm Model="@dateModel" OnSubmit="OnSubmitMethod">
+                <label for="whenEated">Wybierz datę kiedy spożyto posiłek</label>
+                <InputDate id="whenEated" @bind-Value="dateModel" class="form-control" />
+                <input type="submit" value="Wyświetl wybrany dzień" class="btn btn-primary">
+            </EditForm>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Dostępne posiłki do dodania, dzień do którego zostanie dodany posiłek:@DateToAdd</h3>
+
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body p-0">
+                    <table class="table table-striped projects">
+                        <thead>
+                            <tr>
+                                <th style="auto" class="text-center">
+                                    Nazwa posiłku
+                                </th>
+                                <th style="auto" class="text-center">
+                                    Indeks glikemiczny
+                                </th>
+                                <th style="auto" class="text-center">
+                                    Zawartość protein
+                                </th>
+                                <th style="auto" class="text-center">
+                                    Zawartość węglowodanów
+                                </th>
+                                <th style="auto" class="text-center">
+                                    Zawartość tłuszczu
+                                </th>
+                                <th>
+
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var meal in Meals)
+                            {
+
+
+                                <tr>
+                                    <td>
+                                        @meal.Name
+                                    </td>
+                                    <td>
+                                        <p class="text-center">
+                                            @meal.GlycemicIndex
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="text-center">
+                                            @meal.QuantityProteinInGrams
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="text-center">
+                                            @meal.QuantityCarboInGrams
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="text-center">
+                                            @meal.QuantityFatInGrams
+                                        </p>
+                                    </td>
+                                    <td class="project-actions text-right">
+@*                                        <a class="btn btn-primary btn-sm" href="/dietdescryption">
+                                            <i class="fas fa-folder">
+                                            </i>
+                                            Zobacz więcej informacji
+                                        </a>*@
+                                        <button type="button" class="btn btn-primary btn-sm">Dodaj spożyty posiłek</button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+    </div>
+
+
+
+
+
+
+}
+@code {
+    public List<MealForListVm> Meals { get; set; }
+
+    private DateTime dateModel;
+
+
+    public string DateToAdd { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        Meals = await http.GetFromJsonAsync<List<MealForListVm>>("api/meals");
+        DateToAdd = string.Empty;
+        //Number = 1;
+    }
+    //private int _number;
+    //public int Number
+    //{
+    //    get { return _number++; }
+    //    set { _number = value; }
+    //}
+    private async void OnSubmitMethod(EditContext editContext)
+    {
+        if (editContext.Validate())
+        {
+            //Number = 1;
+            DateToAdd = dateModel.ToShortDateString();
+            //var response = await http.PostAsJsonAsync("api/diet", NewDiet);
+            //var json = await response.Content.ReadAsStringAsync();
+
+            //Navigator.NavigateTo("/dietdescryption/" + int.Parse(json));
+
+            //Console.WriteLine(Date.ToString());
+
+            //Navigator.NavigateTo("/meal/eatedMealInDay/" + Id + "/" + helpDate.ToString("yyyy-MM-dd"));
+
+
+            Console.WriteLine("Diet has been validated");
+        }
+        else
+        {
+            Console.WriteLine("Diet hasn't been validated");
+        }
+    }
+}

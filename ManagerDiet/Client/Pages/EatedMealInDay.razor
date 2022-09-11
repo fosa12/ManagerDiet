@@ -1,0 +1,149 @@
+﻿@page "/meal/eatedMealInDay/{id:int}/{date:datetime}"
+@using Blazored.FluentValidation
+@using ManagerDiet.Shared.Diets.Queries.GetEatedMealForIndex
+@using ManagerDiet.Shared.Diets.Queries.GetMealDetail;
+@using ManagerDiet.Shared.Meals.Queries.GetEatedMealsByDate
+@inject HttpClient http;
+@inject NavigationManager Navigator
+
+
+@if (EatedMakroAndKCALInDay == null || EatedMeals == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    @*    <div class="container">*@
+    <div class="row">
+        <div class="col-sm-3">
+            <EditForm Model="@helpDate" OnSubmit="OnSubmitMethod">
+                <FluentValidationValidator />
+                <label for="dateDay">Wybierz datę dla której chcesz zobaczyć wyniki</label>
+                <InputDate id="height" @bind-Value="helpDate" class="form-control" />
+                <input type="submit" value="Wyświetl wybrany dzień" class="btn btn-primary">
+            </EditForm>
+            <ManagerDiet.Client.Components.Diets.ViewComponents.EatedCaloricAndMakroInDay EatedMakroAndKCALInDay="@EatedMakroAndKCALInDay"></ManagerDiet.Client.Components.Diets.ViewComponents.EatedCaloricAndMakroInDay>
+
+        </div>
+        <div class="col">
+            <section class="content">
+
+                <!-- Default box -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Spożyte posiłki</h3>
+
+                        @*            <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                    <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+                    <i class="fas fa-times"></i>
+                    </button>
+                    </div>*@
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table table-striped projects">
+                            <thead>
+                                <tr>
+                                    <th style="auto" class="text-center">
+                                        Nazwa posiłku
+                                    </th>
+                                    <th style="auto" class="text-center">
+                                        Spożyte KCAL
+                                    </th>
+                                    <th style="auto" class="text-center">
+                                        Spożyte białko
+                                    </th>
+                                    <th style="auto" class="text-center">
+                                        Spożyte węglowodany
+                                    </th>
+                                    <th style="auto" class="text-center">
+                                        Spożyte tłuszcze
+                                    </th>
+                                    <th>
+
+                                    </th>
+                                </tr>
+                            </thead>
+                            @foreach (var meal in EatedMeals.EatedMeals)
+                            {
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center color=red">
+                                            @meal.MealName
+                                            <br />
+                                        </td>
+                                        <td class="text-center">
+                                            @meal.EatedKcal
+                                        </td>
+                                        <td class="text-center">
+                                            @meal.EatedProtein
+                                        </td>
+                                        <td class="text-center">
+                                            @meal.EatedCarbo
+                                        </td>
+                                        <td class="text-center">
+                                            @meal.EatedFat
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            }
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </section>
+        </div>
+    </div>
+}
+
+
+
+
+
+@code {
+    public EatedMealForIndexVm EatedMakroAndKCALInDay { get; set; } = new();
+    public EatedMealsVm EatedMeals { get; set; }
+    [Parameter]
+    public int Id { get; set; }
+    [Parameter]
+    public DateTime? Date { get; set; }
+
+
+    private DateTime helpDate;
+
+    protected override async Task OnInitializedAsync()
+    {
+        EatedMakroAndKCALInDay = await http.GetFromJsonAsync<EatedMealForIndexVm>("api/meals/" + Id + "/" + "2022-09-05");//TO DO-PARAMETER
+        EatedMeals = await http.GetFromJsonAsync<EatedMealsVm>("api/meals/eatedMeals/" + Id + "/" + "2022-09-05");//TO DO-PARAMETER
+    }
+
+
+    private async void OnSubmitMethod(EditContext editContext)
+    {
+        if (editContext.Validate())
+        {
+
+            //var response = await http.PostAsJsonAsync("api/diet", NewDiet);
+            //var json = await response.Content.ReadAsStringAsync();
+
+            //Navigator.NavigateTo("/dietdescryption/" + int.Parse(json));
+
+            Console.WriteLine(Date.ToString());
+
+            Navigator.NavigateTo("/meal/eatedMealInDay/" + Id + "/" + helpDate.ToString("yyyy-MM-dd"));
+
+            Console.WriteLine("Diet has been validated");
+        }
+        else
+        {
+            Console.WriteLine("Diet hasn't been validated");
+        }
+    }
+    private void GoToPage()
+    {
+
+    }
+    }

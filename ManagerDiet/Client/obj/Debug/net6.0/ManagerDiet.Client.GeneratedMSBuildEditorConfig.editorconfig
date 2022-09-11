@@ -50,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRNZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Pages/AddEatedMeal.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkRWF0ZWRNZWFsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Pages/AddNewCaloricDemand.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkTmV3Q2Fsb3JpY0RlbWFuZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -72,6 +76,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Pages/DietDescryption.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlldERlc2NyeXB0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Pages/EatedMealInDay.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWF0ZWRNZWFsSW5EYXkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/repoGit/ManagerDiet/ManagerDiet/ManagerDiet/Client/Pages/Index.razor]

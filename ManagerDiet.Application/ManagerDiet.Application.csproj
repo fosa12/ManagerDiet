@@ -24,6 +24,7 @@
   <ItemGroup>
     <Folder Include="Diets\Commands\UpdateDiet\" />
     <Folder Include="Common\Exceptions\" />
+    <Folder Include="Meals\Commands\" />
   </ItemGroup>
 
 </Project>
