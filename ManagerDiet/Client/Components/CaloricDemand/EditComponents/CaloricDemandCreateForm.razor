@@ -13,9 +13,9 @@
         <InputNumber id="height" @bind-Value="NewCaloricDemand.Height" placeholder="np. 180 - bez dopisku cm" class="form-control" />
         <ValidationMessage For="() => NewCaloricDemand.Height" />
 
-        <label for="age">Wiek (cm)</label>
-        <InputNumber id="age" @bind-Value="NewCaloricDemand.Height" placeholder="np. 18" class="form-control" />
-        <ValidationMessage For="() => NewCaloricDemand.Height" />
+        <label for="age">Wiek </label>
+        <InputNumber id="age" @bind-Value="NewCaloricDemand.Age" placeholder="np. 18" class="form-control" />
+        <ValidationMessage For="() => NewCaloricDemand.Age" />
 
         <label for="sex">Płeć</label>
         <InputSelect id="sex" @bind-Value="NewCaloricDemand.Sex" rows="" class="form-control">
